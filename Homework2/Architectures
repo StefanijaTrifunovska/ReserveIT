@@ -1,1 +1,29 @@
+1. Conceptual Architecture
 
+1.1 //ovde slika nekako treba da stavime od diagramot
+
+1.2 Description of the diagram
+    1.2.1. WebApp UI:
+              - Show places
+              - Display Map
+              - Display Tables
+    1.2.2. User management
+              - Sign up
+              - Sign in
+              - Manage reservations(get reservation)
+    1.2.3 Reservation service
+              - Choose a place
+              - Choose a system
+    1.2.4 Admin panel
+              - Show reservations
+              - Sort amenities in use of the system
+    1.2.5 Admin Service
+              - Add amenities
+              - Delete amenities
+              - Add manager account
+              - Delete manager accounts
+    1.2.6 Manager panel
+              - Update available tables
+    1.2.7 Database
+              - Fetch information(tables and users)
+              - Store information(tables and users)

@@ -1,0 +1,13 @@
+A conceptual architecture for a services layer is a model that depicts a layered architectural style. Each layer in a layered architectural style is a package of software that has a well-defined interface and a few well-known dependencies with other layers. Each layer implements one technical function within the service. For instance, a data access layer in our case the database is responsible for encapsulating the technical means for accessing a database. All data access requests to a database go through the data access layer for that database. The data access layer has the responsibility of hiding the data access mechanism from upstream layers. 
+
+The web application communicates with the layers by establishing an HTTP connection.
+All information from the database is fetched and returned to the WebApp UI.
+Communicates asynchronously.
+
+
+Behavior 1
+In a case in which a client is communicating with the server, the request is forwarded  towards user managemen. The user is recognized and using the reservation service makes a reservation. The data (reservation) is logged and stored in the database until completion.
+Behavior 2
+In a case in which an admin or a manager is communicating with the server a request is forwarded towards the database and any update about a new reservation made by a client is returned.
+
+We have defined 3 infrastructures: Client, Web Server and Application server. In the Client infrastructure the Web browser sends an API call to the Presentation layer which is located in the Web Server infrastructure as well as the Service-Layer and the Integration Layer. The component Data Source Access sends a read/write call back to the Database component located in the Application Server infrastructure. The Service Module Facade component sends an execute call back to The Service Moudule located in the Operation Processes and Context infrastructure and the ReserveIT component sends an API call to add data to the Database component

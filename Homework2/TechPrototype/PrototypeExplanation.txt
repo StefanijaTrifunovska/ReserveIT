@@ -1,0 +1,4 @@
+The provided file is a prototype for our Web Application ReserveIT. For some clarification, in order to navigate from one page to another you need to click on the appropriate button, which is self explanatory. If a case happens in which you can't understand what to click on, clicking on an empty space will show you all interactive sections of the page you're currently on. 
+
+https://xd.adobe.com/view/d9c03521-fa4b-490d-8bc1-f2a2cf586deb-8c93/
+

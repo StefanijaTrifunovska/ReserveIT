@@ -1,0 +1,150 @@
+
+$secondaryColor:#6C63FF;
+$myDarkBlue:#3F3D56;
+$personalWhite:#FFFEFE;
+
+a{
+    text-decoration: none;
+}
+.nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2rem;
+    .reserve{
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+    }
+    .logo-img{
+        width: 22%;
+    }
+    .reserve{
+        color: $personalWhite;
+        font-weight: 600;
+        background: $secondaryColor;
+        padding:.7rem;
+        border-radius: 20px;
+    }
+    nav{
+        display: flex;
+        gap:1.5rem;
+        font-weight: 500;
+        align-items: center;
+        justify-content: center;
+        .home,.about, .help, .sign-in-nav{
+            color: black;
+        }
+        .sign-up-nav{
+            background: $secondaryColor;
+            padding: 0.3rem 0.7rem;
+            border-radius: 20px;
+        }
+        
+    }
+}
+.btn{
+    background:$myDarkBlue;
+    padding:.2rem;
+    width: 22%;
+    border-radius: 20px;
+}
+.big-text{
+    font-size:1.8rem;
+}
+.medium-text{
+    font-size:1.3rem;
+}
+.whiteText{
+    color:$personalWhite;
+}
+.landing-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    .main-illustration{
+        width: 50%;
+    }
+    .main-section{
+        width: 35%;
+        display:flex;
+        flex-direction: column;
+        gap:2rem;
+        .main-text{
+            display: flex;
+            flex-direction: column;
+            gap:0.6rem;
+            padding-bottom:2rem;
+            h1{
+                font-size: 2.4rem;
+            }
+            h5{
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+            p{
+                font-size: 1.1rem;
+            }
+        }
+    }
+    .main-btns{
+        display: flex;
+        align-items: center;
+        justify-content:flex-start;
+        gap:2.3rem;
+    }
+    .startNow-btn{
+        display: flex;
+        text-align: center;
+        background:$myDarkBlue; 
+        padding: .7rem 1rem;
+        border-radius: 20px;
+        img{
+            padding-left:1rem;
+        }
+       }
+       .aroundYou-btn{
+        display: flex;
+        text-align: center;
+        color: $myDarkBlue;
+        font-weight: 500;
+        img{
+            padding-left:1rem;
+        }
+    }
+}
+.section2-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    .section2{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:2rem;
+        text-align: center;
+        line-height: 2.1rem;
+    }
+}
+.section3-container{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding:2rem;
+    align-items: center;
+    .section3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:2rem;
+        width: 40%;
+        line-height: 2.1rem;
+    }
+}

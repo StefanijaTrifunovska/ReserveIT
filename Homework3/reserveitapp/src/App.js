@@ -8,6 +8,7 @@ import SignUp from './SignUp'
 import Reserve from './Reserve'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import Dashboard from './Dashboard';
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
             <Route path='/help' component={Help} />
             <Route path='/signin' component={SignIn}/>
             <Route path='/signup' component={SignUp}/>
+            <Route path= '/dashboard' component={Dashboard}/>
             </Switch>
         </nav>
     </header>

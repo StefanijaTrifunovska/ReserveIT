@@ -1,0 +1,101 @@
+#show-answer1{
+opacity: 1;
+}
+.help-container{
+    padding:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    gap:10rem;
+    .faq-main{
+        button{
+            cursor: pointer;
+        }
+        display: flex;
+        flex-direction: column;
+        gap:10rem;
+        position: relative;
+        .questions{
+            background: #3F3D56;
+            border-radius: 10px;
+            padding: .5rem 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #fefefe;
+            img{
+                width: 10%;
+            }
+        }
+        .answers{
+            position: absolute;
+            opacity: 0;
+        }
+    }
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75vw;    
+         gap:1.4rem;
+         input{
+             background: #fefefe;
+             height:2rem;
+             border:none;
+             border-radius: 10px;
+         }
+        label{
+            font-weight: 500;
+        }
+        textarea{
+            height: 10rem;
+            border:none;
+            border-radius: 10px;
+        }
+        .submit{
+            width: 6rem;
+            padding:0;
+            color: #fefefe;
+            font-weight: 600;
+            background: #3F3D56;
+            border-radius: 10px;
+            align-self: center;
+        }
+    }
+}
+
+@media only screen and (min-width:800px){
+    .help-container{
+        flex-wrap: nowrap;
+        .contact-form{
+            width: 100%;
+           input{
+               width: 100%;
+
+           }
+           textarea{
+               width: 100%;
+           }
+        }
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .faq-main{
+        width: 35vw;
+        img{
+            max-width: 3%;
+        }
+    }
+    
+    .contact-form{
+        input{
+            max-width: 60%;
+
+        }
+        textarea{
+            max-width: 60%;
+        }
+    }
+}

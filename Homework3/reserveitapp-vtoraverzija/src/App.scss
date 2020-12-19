@@ -1,0 +1,620 @@
+$secondaryColor: #6c63ff;
+$myDarkBlue: #3f3d56;
+$personalWhite: #fffefe;
+
+//MOBILE-FIRST
+body {
+    margin: 0.6rem;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+//NAV
+.nav {
+    margin: 2rem 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        width: 55%;
+    }
+}
+
+.menu {
+    margin-top: auto;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 2rem;
+    margin-bottom: auto;
+    transform: rotate(0deg);
+    z-index: 7;
+
+    span {
+        position: absolute;
+        left: 0;
+        display: block;
+        height: 1.5px;
+        width: 29.5px;
+        border-radius: 18px;
+        background: #111111;
+        transition: 0.25s ease-in-out;
+        transform: rotate(0deg);
+    }
+
+    span:nth-child(1) {
+        top: 0;
+    }
+
+    span:nth-child(2),
+    span:nth-child(3) {
+        top: 8px;
+    }
+
+    span:nth-child(4) {
+        top: 16px;
+    }
+}
+
+#hidden {
+    position: relative;
+    z-index: 2;
+    background: $myDarkBlue;
+    position: fixed;
+    height: 100vh;
+    padding: 1.5rem;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    color: #fefcfd;
+    font-weight: 600;
+    font-size: 1.2rem;
+    animation: open-anime 0.3s ease-in-out;
+    clip-path: circle(100%);
+
+    div {
+        color: $personalWhite;
+    }
+
+    div {
+        position: absolute;
+        cursor: pointer;
+        height: 90%;
+        transform: translateX(-50%);
+    }
+
+    .reserve {
+        top: 10%;
+        animation: fadein-anime 300ms ease;
+    }
+
+    .home {
+        top: 25%;
+        animation: fadein-anime 300ms 75ms ease;
+    }
+
+    .about {
+        top: 40%;
+        animation: fadein-anime 300ms 150ms ease;
+    }
+
+    .help {
+        top: 55%;
+        animation: fadein-anime 300ms 225ms ease;
+    }
+
+    .sign-in-nav {
+        top: 70%;
+        animation: fadein-anime 300ms 300ms ease;
+    }
+
+    .sign-up-nav {
+        top: 85%;
+        animation: fadein-anime 300ms 375ms ease;
+    }
+}
+
+#close {
+    position: fixed;
+    right: 0;
+    z-index: 4;
+
+    span {
+        background: #fefcfd;
+    }
+
+    span:nth-child(1) {
+        top: 8px;
+        width: 0%;
+        left: 50%;
+    }
+
+    span:nth-child(2) {
+        transform: rotate(45deg);
+    }
+
+    span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    span:nth-child(4) {
+        top: 16px;
+        width: 0%;
+        left: 50%;
+    }
+}
+
+.hide-mobile {
+    display: none;
+}
+
+//HOME
+.btn {
+    background: $myDarkBlue;
+    padding: 0.2rem;
+    width: 22%;
+    border-radius: 20px;
+    transition: ease-in-out 250ms;
+
+    &:hover {
+        background: $secondaryColor;
+    }
+}
+
+.landing-container {
+    height: 100vh;
+
+    .main-section {
+        transform: translateY(50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+
+        .main-text {
+            text-align: center;
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h5 {
+                font-size: 0.9rem;
+                padding: 1rem 0 2rem;
+                font-weight: 500;
+            }
+
+            p {
+                display: none;
+            }
+        }
+
+        .main-btns {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .startNow-btn,
+            .aroundYou-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                gap: 1em;
+                font-weight: 600;
+                img{
+                    width: 5%;
+                }
+            }
+
+            .startNow-btn {
+                color: $personalWhite;
+                background: #6c63ff;
+                border-radius: 20px;
+                padding: 0.6rem;
+            }
+
+            .aroundYou-btn {
+                color: $myDarkBlue;
+            }
+        }
+    }
+}
+
+.section2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+
+    img {
+        width: 90vw;
+    }
+
+    .section2 {
+        padding: 50% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+        line-height: 1.5rem;
+
+        h2 {
+            position: relative;
+            font-size: 1.4rem;
+
+            &::before {
+                content: " ";
+                width: 66%;
+                transform: translateX(-20%);
+                top: -10%;
+                height: 4px;
+                background: #7b7bdb;
+                position: absolute;
+                border-radius: 20px;
+            }
+        }
+
+        .signUp-btn {
+            color: $personalWhite;
+            width: 100%;
+        }
+    }
+}
+
+.section3-container {
+    display: flex;
+    text-align: center;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+
+    img {
+        width: 90vw;
+    }
+
+    .section3 {
+        padding: 50% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+        line-height: 1.5rem;
+
+        h2 {
+            position: relative;
+            font-size: 1.5rem;
+
+            &::after {
+                content: " ";
+                position: absolute;
+                width: 30%;
+                height: 4px;
+                border-radius: 20px;
+                background: #7b7bdb;
+                bottom: -20%;
+                right: 30%;
+            }
+        }
+
+        .contactus-btn {
+            color: $personalWhite;
+            width: 100%;
+        }
+    }
+}
+
+// DESKTOPS
+@media only screen and (min-width: 920px) {
+    body {
+        margin: 2rem;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+
+    .nav {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .reserve {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
+            padding: 0;
+        }
+
+        .reserve {
+            color: $personalWhite;
+            font-weight: 600;
+            background: $secondaryColor;
+            padding: 0.7rem;
+            border-radius: 20px;
+            transition: ease-in-out 100ms;
+
+            &:hover {
+                background: $myDarkBlue;
+            }
+        }
+
+        nav {
+            display: flex;
+            gap: 1.5rem;
+            font-weight: 500;
+            align-items: center;
+            justify-content: center;
+
+            .home,
+            .about,
+            .help,
+            .sign-in-nav {
+                color: black;
+            }
+
+            .sign-up-nav {
+                background: $secondaryColor;
+                padding: 0.3rem 0.7rem;
+                border-radius: 20px;
+                transition: ease-in-out 100ms;
+
+                &:hover {
+                    background: $myDarkBlue;
+                }
+            }
+        }
+    }
+
+    .big-text {
+        font-size: 1.8rem;
+    }
+
+    .medium-text {
+        font-size: 1.3rem;
+    }
+
+    .whiteText {
+        color: $personalWhite;
+    }
+
+    .landing-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding:2rem 0;
+        .main-illustration {
+            width: 50%;
+            display: block;
+        }
+
+        .main-section {
+            transform: none;
+           width: 40%;
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+
+            .main-text {
+                display: flex;
+                flex-direction: column;
+                gap: 0.6rem;
+                padding-bottom: 2rem;
+                text-align: left;
+
+                h1 {
+                    font-size: 2.4rem;
+                    text-align: left;
+                    position: relative;
+                    // &::after{
+                    //     content: ' ';
+                    //     width: 6rem;
+                    //     height: 5px;
+                    //     background: $secondaryColor;
+                    //     position: absolute;
+                    //     bottom:0%;
+                    //     left: 45%;
+                    //     z-index: -1;
+                    //     opacity: .9;
+                    //     border-radius: 50px;
+                    // }
+                }
+
+                h5 {
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                    padding: 0;
+                }
+
+                p {
+                    display: inline;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        .main-btns {
+         position: relative;
+         width: 100%;
+        }
+
+        .startNow-btn {
+            position: absolute;
+            left:0;
+            display: flex;
+            text-align: center;
+            border-radius: 20px;
+            &:hover {
+                img {
+                    transform: translateX(30%);
+                }
+            }
+
+            img {
+                padding-left:0;
+                transition: ease-in 200ms;
+            }
+        }
+
+        .aroundYou-btn {
+            position: absolute;
+            left:40%;
+            top:0;
+            transform: translateY(30%);
+            display: flex;
+            text-align: center;
+            color: $myDarkBlue;
+            font-weight: 500;
+            &:hover {
+                img {
+                    transform: translateX(20%);
+                }
+            }
+
+            img {
+                padding-left: 0;
+                transition: ease-in-out 200ms;
+            }
+        }
+    }
+
+    .section2-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        img{
+            width: 50%;
+        }
+        .section2 {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            text-align: center;
+            line-height: 2.1rem;
+            padding:0;
+            h2 {
+                position: relative;
+                font-size:1.8rem;
+                &::before {
+                    content: " ";
+                    width: 66%;
+                    transform: translateX(-20%);
+                    top: -10%;
+                    height: 4px;
+                    background: #7b7bdb;
+                    position: absolute;
+                    border-radius: 20px;
+                }
+            }
+            .signUp-btn{
+                width: unset;
+                padding: .2rem 2rem;
+            }
+        }
+    }
+
+    .section3-container {
+        display: flex;
+        flex-direction:row;
+        text-align: center;
+        justify-content: space-between;
+        padding: 2rem;
+        align-items: center;
+        img{
+            width: 50%;
+        }
+        .section3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+            width: 40%;
+            line-height: 2.1rem;
+            padding:0;
+            h2 {
+                position: relative;
+
+                &::after {
+                    content: " ";
+                    position: absolute;
+                    width: 60%;
+                    height: 4px;
+                    border-radius: 20px;
+                    background: #7b7bdb;
+                    bottom: -20%;
+                    right: -11%;
+                }
+            }
+            .contactus-btn{
+                width: unset;
+                padding: .2rem 2rem;
+            }
+        }
+    }
+}
+
+//ANIMATIONS
+@keyframes fadein-anime {
+    0% {
+        opacity: 0;
+        right: 0;
+    }
+
+    99% {
+        opacity: 0.9;
+        right: 42%;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes open-anime {
+    0% {
+        opacity: 0;
+        clip-path: circle(0% at 100% 25%);
+    }
+
+    99% {
+        opacity: 0.9;
+        clip-path: circle(99% at 100% 25%);
+    }
+
+    100% {
+        opacity: 1;
+        clip-path: circle(100% at 100% 25%);
+    }
+}

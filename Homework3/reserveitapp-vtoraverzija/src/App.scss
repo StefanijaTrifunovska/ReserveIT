@@ -73,7 +73,6 @@ a {
     padding: 1.5rem;
     top: 0;
     right: 0;
-    width: 100vw;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -81,11 +80,15 @@ a {
     align-items: center;
     justify-content: space-between;
     color: #fefcfd;
-    font-weight: 600;
-    font-size: 1.2rem;
-    animation: open-anime 0.3s ease-in-out;
-    clip-path: circle(100%);
-
+    font-weight: 300;
+    font-size: 1rem;
+    animation:  0.3s ease-in-out;
+    width: 50vw;
+    //clip-path: circle(100%);
+    .reserve{
+        color: #6c63ff;
+        font-weight: 600;
+    }
     div {
         color: $personalWhite;
     }
@@ -98,32 +101,32 @@ a {
     }
 
     .reserve {
-        top: 10%;
-        animation: fadein-anime 300ms ease;
+        top: 15%;
+        animation: fadein-anime 500ms ease;
     }
 
     .home {
-        top: 25%;
+        top: 30%;
         animation: fadein-anime 300ms 75ms ease;
     }
 
     .about {
-        top: 40%;
+        top: 45%;
         animation: fadein-anime 300ms 150ms ease;
     }
 
     .help {
-        top: 55%;
+        top: 60%;
         animation: fadein-anime 300ms 225ms ease;
     }
 
     .sign-in-nav {
-        top: 70%;
+        top: 75%;
         animation: fadein-anime 300ms 300ms ease;
     }
 
     .sign-up-nav {
-        top: 85%;
+        top: 90%;
         animation: fadein-anime 300ms 375ms ease;
     }
 }
@@ -594,27 +597,28 @@ a {
 
     99% {
         opacity: 0.9;
-        right: 42%;
+        right:23%;
     }
 
     100% {
         opacity: 1;
+        right: 50%;
     }
 }
 
-@keyframes open-anime {
-    0% {
-        opacity: 0;
-        clip-path: circle(0% at 100% 25%);
-    }
+// @keyframes open-anime {
+//     0% {
+//         opacity: 0;
+//         clip-path: circle(0% at 100% 25%);
+//     }
 
-    99% {
-        opacity: 0.9;
-        clip-path: circle(99% at 100% 25%);
-    }
+//     99% {
+//         opacity: 0.9;
+//         clip-path: circle(99% at 100% 25%);
+//     }
 
-    100% {
-        opacity: 1;
-        clip-path: circle(100% at 100% 25%);
-    }
-}
+//     100% {
+//         opacity: 1;
+//         clip-path: circle(100% at 100% 25%);
+//     }
+// }

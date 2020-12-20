@@ -37,7 +37,7 @@ function Nav() {
           <div className="sign-up-nav whiteText nav-links"> Sign Up </div>
         </Link>
       </nav>
-      <div id={showLinks ? "close" : ""} onClick={()=> setShowLinks(!showLinks)} className="menu hide-desktop">
+      <div id={showLinks ? "close" : ""}  onClick={()=> setShowLinks(!showLinks)} className="menu hide-desktop">
         <span> </span> <span> </span> <span> </span> <span> </span>
       </div>
     </div>

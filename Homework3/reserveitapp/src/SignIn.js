@@ -2,6 +2,8 @@ import React from "react";
 import "./Sign-up.scss";
 import { Link } from "react-router-dom";
 import "./sign-in.scss";
+import "./database.js";
+
 
 function SignIn() {
   return (

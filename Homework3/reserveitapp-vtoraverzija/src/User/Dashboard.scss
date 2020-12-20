@@ -1,3 +1,8 @@
+.dashboard-btn{
+    text-align: center;
+    padding-top: 2rem;
+}
+
 .dashboard-container{
     display: flex;
     flex-direction: column;
@@ -35,9 +40,27 @@
     }
 }
 
-@media only screen and (min-width:461){
+@media only screen and (min-width:461px){
 
-}
-@media only screen and (min-width:1200){
+    .dashboard-container{
+        width: 90vw;
+        align-items: flex-start;
+        .dashboard-top{
+            flex-wrap: nowrap;
+            width: 100%;
+            gap: 60%;
+            padding-bottom: 2rem;
+        }
+        .current, .info-reservations{
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+        }
+        .info-reservations{
+           display: flex;
+           width: 80vw;
+           align-items: center;
+           justify-content: space-between;
 
+        }
+    }
 }

@@ -10,12 +10,18 @@ function Profile() {
                    <h4>My profile</h4> 
                 </div>
                 <div className="profile-section">  
-                <div className="name">
-                        Name: 
-                    </div>Jane Doe
-                    <div className="number">Number: 
-                    </div>070123456
-                    <div className="email">Email: </div>janedoe@gmail.com
+                <div className="one">
+                        <div className="name">Name: </div>
+                        <div>Jane Doe</div>
+                    </div>
+                    <div className="two">
+                        <div className="number">Number: </div>
+                        <div>070123456</div>
+                    </div>
+                    <div className="three">
+                        <div className="email">Email: </div>
+                        <div>janedoe@gmail.com</div>
+                    </div>
                     <div className="edit">
                     <Link to="/reserve">
               <div className="white">Edit</div>
@@ -23,6 +29,7 @@ function Profile() {
                     </div>        
                 </div>
             </div>
+            <div className="dashboard-btn"><Link to='/user' >Dashboard</Link></div>
         </div>
     );
 }

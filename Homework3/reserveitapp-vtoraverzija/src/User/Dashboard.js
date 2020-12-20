@@ -18,12 +18,18 @@ function Dashboard() {
                     </div>
                 </div>
                 <div className="info-reservations">
-                    <div className="place">
-                        Place: 
-                    </div>Kafe Bar Sindikat
-                    <div className="date">Date: 
-                    </div>31.12.2020
-                    <div className="time">Time: </div>14:30
+                    <div className="one">
+                        <div className="place">Place: </div>
+                        <div>Your Choice of Restaurant/Cafe</div>
+                    </div>
+                    <div className="two">
+                        <div className="date">Date: </div>
+                        <div>31.12.2020</div>
+                    </div>
+                    <div className="three">
+                        <div className="place">Time: </div>
+                        <div>14:30</div>
+                    </div>
                     <div className="edit">
                     <Link to="/reserve">
               <div className="white">Edit</div>

@@ -59,7 +59,8 @@ h1 {
 .navigations{
     display: flex;
     align-items: center;
-    .sign-up{
+    
+    .button{
         font-size: medium;
         background: #6C63FF;
         padding: 0.5rem .9rem;
@@ -68,7 +69,7 @@ h1 {
         margin-right: 2rem;
         
     }
-    .sign-in{
+    button{
         color:#6C63FF;
         font-weight: 600;
         padding-left: .3rem;

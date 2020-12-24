@@ -1,0 +1,66 @@
+.dashboard-btn{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.dashboard-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #3F3D56;
+    color: white;
+    padding: 2rem;
+    border-radius: 20px;
+ 
+    .dashboard-top{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .white{
+        color: white;
+    }
+    .place, .date, .time{
+        color: #E3CAAB;
+    }
+
+    .edit{
+    background: #6C63FF;
+    padding: 0.5rem 2.1rem;
+    text-align: center;
+    border-radius: 14px;
+    transition: ease-in-out 300ms;
+    &:hover {
+        opacity: .7;
+        color: white;
+        }
+    }
+}
+
+@media only screen and (min-width:461px){
+
+    .dashboard-container{
+        width: 90vw;
+        align-items: flex-start;
+        .dashboard-top{
+            flex-wrap: nowrap;
+            width: 100%;
+            gap: 60%;
+            padding-bottom: 2rem;
+        }
+        .current, .info-reservations{
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+        }
+        .info-reservations{
+           display: flex;
+           width: 80vw;
+           align-items: center;
+           justify-content: space-between;
+
+        }
+    }
+}

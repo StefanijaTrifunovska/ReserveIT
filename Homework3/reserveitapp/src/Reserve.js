@@ -1,28 +1,30 @@
 import React from 'react';
-import Iframe from 'react-iframe';
+import Iframe from 'react-iframe'
+
 
 function Reserve() {
-   //const style ={ width:425px , height="350" ,frameborder="0", scrolling="no", marginheight="0" ,marginwidth="0"}
-   
-    return (
-        
-        
-         <div className="About">
-        // <Iframe 
-        // url= "https://www.openstreetmap.org/?mlat=41.9417&amp;mlon=21.4124#map=9/41.9417/21.4124"
-        // src="https://www.openstreetmap.org/export/embed.html?bbox=19.646301269531254%2C41.25676297956369%2C23.17840576171875%2C42.61942189393028&amp;layer=mapnik&amp;marker=41.941732369371216%2C21.412353515625"
-        // style="border: 1px solid black"
-        // width="450px"
-        // height="450px"
-        // id="myId"
-        // className="myClassname"
-        // display="initial"
-        // position="relative"/>
+    //const style ={ width:425px , height="350" ,frameborder="0", scrolling="no", marginheight="0" ,marginwidth="0"}
 
-            <h1>Map</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d763624.3338982764!2d21.2971040166626!3d41.61451072088425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m3!3e6!4m0!4m0!5e0!3m2!1sen!2smk!4v1608407282351!5m2!1sen!2smk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            
-        </div>
+    return (
+
+        <
+        div >
+        <
+        h1 > Map < /h1>
+
+        <
+        Iframe width = "500"
+        height = "420"
+        frameborder = "0"
+        scrolling = "no"
+        marginheight = "0"
+        marginwidth = "0"
+        url = "http://overpass-turbo.eu/map.html?Q=%2F*%0AThis%20is%20an%20example%20Overpass%20query.%0ATry%20it%20out%20by%20pressing%20the%20Run%20button%20above!%0AYou%20can%20find%20more%20examples%20with%20the%20Load%20tool.%0A*%2F%0Anode%5Bamenity%3Dbar%5D%0A(40.994410999439516%2C20.533447265625%2C42.370720143531976%2C22.8515625)%3B%0Aout%3B%0A%0Anode%0A%20%20%5Bamenity%3Drestaurant%5D%0A%20%20(40.994410999439516%2C20.533447265625%2C42.370720143531976%2C22.8515625)%3B%0Aout%3B%0A%0Anode%0A%20%20%5Bamenity%3Dpub%5D%0A%20%20(40.994410999439516%2C20.533447265625%2C42.370720143531976%2C22.8515625)%3B%0Aout%3B%0Anode%0A%20%20%5Bamenity%3Dgrill%5D%0A%20%20(40.994410999439516%2C20.533447265625%2C42.370720143531976%2C22.8515625)%3B%0Aout%3B%0Anode%0A%20%20%5Bamenity%3Dlounge%5D%0A%20%20(40.994410999439516%2C20.533447265625%2C42.370720143531976%2C22.8515625)%3B%0Aout%3B%0Anode%0A%20%20%5Bamenity%3Dpizza%5D%0A%20%20(40.994410999439516%2C20.533447265625%2C42.370720143531976%2C22.8515625)%3B%0Aout%3B%0Anode%0A%20%20%5Bamenity%3Dfast_food%5D%0A%20%20(40.994410999439516%2C20.533447265625%2C42.370720143531976%2C22.8515625)%3B%0Aout%3B%0Anode%0A%20%20%5Bamenity%3Dcafe_bar%5D%0A%20%20(40.994410999439516%2C20.533447265625%2C42.370720143531976%2C22.8515625)%3B%0Aout%3B%0Anode%0A%20%20%5Bamenity%3Dcoffe_shop%5D%0A%20%20(40.994410999439516%2C20.533447265625%2C42.370720143531976%2C22.8515625)%3B%0Aout%3B%0Anode%0A%20%20%5Bamenity%3Dfish_and_chips%5D%0A%20%20(40.994410999439516%2C20.533447265625%2C42.370720143531976%2C22.8515625)%3B%0Aout%3B%0A%0A%0A%0A%0A%0A%0A%0A%7B%7Bstyle%3A%20%0Anode%7B%0Aicon-image%3A%20url(%27icons%2Fmaki%2Fcafe-18.png%27)%3B%0A%20%20icon-width%3A%2018%3B%0A%7D%0A%20%7D%7D" > < /Iframe><br/ > < small > < a href = "https://www.openstreetmap.org/#map=8/41.898/20.698" > View Larger Map < /a></small >
+
+
+
+        <
+        /div>
     );
 }
 

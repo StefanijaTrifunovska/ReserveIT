@@ -1,0 +1,137 @@
+#show-answer{
+    background: #3F3D56;
+    border-radius: 10px;
+    padding: .9rem 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: #ebdcee;
+    visibility: visible;
+    top:0;
+    img{
+        width: 10%;
+    }
+}
+#show-answer2{
+    background: #3F3D56;
+    border-radius:10px;
+    padding: .5rem 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: #fefefe;
+    visibility: visible;
+    color: #ebdcee;
+    top:0;
+    img{
+        width: 10%;
+    }
+    
+}
+.faq-head{
+    text-align: left;
+    margin-left: 2rem;
+    font-size: 1.8em;
+}
+.help-container{
+    padding:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+    gap:10rem;
+    .faq{
+        display: flex;
+        flex-direction: column;
+        gap:10rem;
+        position: relative;
+        .questions{
+            cursor: pointer;
+            background: #3F3D56;
+            border-radius: 10px;
+            padding: .5rem 1rem;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            color: #fefefe;
+            img{
+                width: 10%;
+            }
+        }
+        .answers{
+            position: absolute;
+            visibility: hidden;
+            cursor: pointer;
+        }
+        .faq-3,.faq-2{
+            position: relative;
+        }
+        
+    }
+    
+    .contact-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75vw;    
+         gap:1.4rem;
+         input{
+             background: #fefefe;
+             height:2rem;
+             border:none;
+             border-radius: 10px;
+         }
+        label{
+            font-weight: 500;
+        }
+        textarea{
+            height: 10rem;
+            border:none;
+            border-radius: 10px;
+        }
+        .submit{
+            width: 6rem;
+            padding:0;
+            color: #fefefe;
+            font-weight: 600;
+            background: #3F3D56;
+            border-radius: 10px;
+            align-self: center;
+        }
+    }
+}
+
+@media only screen and (min-width:800px){
+    .help-container{
+        flex-wrap: nowrap;
+        .contact-form{
+            width: 100%;
+           input{
+               width: 100%;
+
+           }
+           textarea{
+               width: 100%;
+           }
+        }
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .faq{
+        width: 70%;
+        img{
+            max-width: 3%;
+        }
+    }
+    
+    .contact-form{
+        input{
+            max-width: 60%;
+
+        }
+        textarea{
+            max-width: 60%;
+        }
+    }
+}
